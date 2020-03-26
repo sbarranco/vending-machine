@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Vending machine
 
-## Available Scripts
+This small APP handles the operation of a beverage vending machine.
+This project has been developed for a Frontend technical assignment.
 
-In the project directory, you can run:
+## Screenshoot
 
-### `npm start`
+![alt text](./screenshot.png "App" )
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Functional Description
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This machine accepts only coins and lets you select one product at a time. When the user enter the app, he/she has different coins (2, 1, 0.5 and 0.2) and get what they want from the machine.
 
-### `npm test`
+User insert coins and select the beverage and, if purchase can be satisfied because the machine has **enough coins** and **stock**, user gets the selected beverage. Otherwise, if there isn't enough stock or an unexpected error occurs, user cannot receive their purcharse and he/she will receive a **notify**.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If user inserts more coins than the value of the selected beverage, the machine will return **change** when delivering the product. If there isn't enough coins stock, user will receive maximum amount available and the machine will notify an ERROR.
 
-### `npm run build`
+The machine will **refill** their coins and beverage as soon as it notice that stock of any of the item is 0. Also, user can click on the **refund** button and receive the inserted coins, and can act like the technical service and refill coins and beverage by herself/himself.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Diagram
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![alt text](./diagram.png "Functional Diagram")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The front-end is created using ReactJS with Hooks with "create-react-app". Styled with SCSS.
+Also, a Reactjs libraries is used to create the notifications, as:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  "react-notifications-component"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Components and Pages
 
-## Learn More
+- Components:
+    - App
+    - Coins
+    - Notifications
+    - RefillFunction
+    - VendingMachine
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Author
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[Silvia Barranco](https://github.com/sbarranco)

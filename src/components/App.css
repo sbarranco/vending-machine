@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Pacifico|Rochester&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  color: #c81912;
+  text-shadow: 2px 2px #42240c;
+}
+
