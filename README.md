@@ -11,7 +11,7 @@ This project has been developed for a Frontend technical assignment.
 
 This machine accepts only coins and lets you select one product at a time. When user enters the app, he/she has different coins (2, 1, 0.5 and 0.2) and get what he/she wants from the machine.
 
-User insert coins and select the beverage and, if purchase can be satisfied because the machine has **enough coins** and **stock**, user gets the selected beverage. Otherwise, if there isn't enough stock or an unexpected error occurs, user cannot receive his/her purcharse and he/she will receive a **notify**.
+User inserts coins, select the beverage and, if purchase can be satisfied because the machine has **enough coins** and **stock**, user gets the selected beverage. Otherwise, if there isn't enough stock or an unexpected error occurs, user cannot receive his/her purcharse and he/she will receive a **notify**.
 
 If user inserts more coins than the value of the selected beverage, the machine will return **change** when delivering the product. If there isn't enough stock of coins, user will receive maximum amount available and the machine will notify an ERROR.
 
